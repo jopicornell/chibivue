@@ -24,7 +24,6 @@ export type RootRenderFunction<HostElement = RendererElement> = (
 
 export function createRenderer(options: RendererOptions) {
     const {
-        setElementText: hostSetElementText,
         createElement: hostCreateElement,
         createText: hostCreateText,
         insert: hostInsert
