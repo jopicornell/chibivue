@@ -1,3 +1,12 @@
-import { helloChibivue } from 'chibivue'
+import { createApp } from 'chibivue'
+import { h } from '../../../packages/runtime-core/h';
 
-helloChibivue()
+const app = createApp({
+    render() {
+        return h('div', {}, [
+            h('h1', {}, ['Hello Chibivue!']),
+        ])
+    },
+})
+
+app.mount('#app')
